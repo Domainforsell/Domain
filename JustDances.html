@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustDances.com - Premium Domain For Sale</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .dancing-emoji {
+            font-size: 4rem;
+            animation: bounce 2s infinite;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .domain-name {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #fff, #f0f0f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .for-sale-badge {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            }
+            50% {
+                box-shadow: 0 15px 40px rgba(255,107,107,0.4);
+            }
+            100% {
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            }
+        }
+
+        .stats-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 25px 20px;
+            border: 2px solid rgba(255,255,255,0.3);
+            min-width: 150px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ffd700, #ff6b6b, #00d2d3);
+            animation: shimmer 3s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            margin-bottom: 5px;
+        }
+
+        .features {
+            margin-bottom: 40px;
+        }
+
+        .feature {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .feature h3 {
+            margin-bottom: 8px;
+            color: #ffd700;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .cta-btn {
+            background: linear-gradient(45deg, #10ac84, #00d2d3);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .cta-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cta-btn:hover::before {
+            left: 100%;
+        }
+
+        .secondary-btn {
+            background: linear-gradient(45deg, #fd79a8, #fdcb6e);
+        }
+
+        .contact-info {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .floating-shapes {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .shape {
+            position: absolute;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .shape:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .shape:nth-child(2) {
+            width: 60px;
+            height: 60px;
+            top: 60%;
+            right: 15%;
+            animation-delay: 2s;
+        }
+
+        .shape:nth-child(3) {
+            width: 40px;
+            height: 40px;
+            bottom: 20%;
+            left: 20%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+            @media (max-width: 768px) {
+            .domain-name {
+                font-size: 2.5rem;
+            }
+            
+            .stats-section {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            
+            .stat-item {
+                min-width: 200px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    
+    <div class="container">
+        <span class="dancing-emoji">💃🕺</span>
+        
+        <h1 class="domain-name">JustDances.com</h1>
+        
+        <p class="tagline">Premium Legacy Domain - 28+ Years Online with 4.1M+ Monthly Visitors</p>
+        
+        <div class="for-sale-badge">
+            🏷️ DOMAIN FOR SALE
+        </div>
+        
+        <div class="cta-buttons">
+            <a href="https://www.namecheap.com/domains/registration/results/?domain=justdances.com" class="cta-btn" target="_blank">
+                🛒 Buy on Namecheap
+            </a>
+            <a href="https://sedo.com/search/?keyword=justdances.com" class="cta-btn secondary-btn" target="_blank">
+                💎 View on Sedo
+            </a>
+        </div>
+        
+        <div class="stats-section">
+            <div class="stat-item">
+                <div class="stat-number">1996</div>
+                <div class="stat-label">Domain Established</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4.1M+</div>
+                <div class="stat-label">Monthly Visitors</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">28+</div>
+                <div class="stat-label">Years Online</div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🏆 Established Legacy Domain</h3>
+                <p>Operating since 1996 with nearly 3 decades of web presence and authority</p>
+            </div>
+            
+            <div class="feature">
+                <h3>📈 Massive Traffic Volume</h3>
+                <p>4.1M+ monthly visitors - proven audience engagement and revenue potential</p>
+            </div>
+            
+            <div class="feature">
+                <h3>✨ Memorable & Brandable</h3>
+                <p>Easy to remember, perfect for dance-related businesses</p>
+            </div>
+            
+            <div class="feature">
+                <h3>🎯 High Commercial Value</h3>
+                <p>Ideal for dance studios, instructors, events, and entertainment</p>
+            </div>
+            
+            <div class="feature">
+                <h3>🌟 SEO Authority</h3>
+                <p>28+ years of domain age with established search engine trust and rankings</p>
+            </div>
+        </div>
+        
+        <div class="cta-buttons">
+            <a href="https://www.namecheap.com/domains/registration/results/?domain=justdances.com" class="cta-btn" target="_blank">
+                🛒 Buy on Namecheap
+            </a>
+            <a href="https://sedo.com/search/?keyword=justdances.com" class="cta-btn secondary-btn" target="_blank">
+                💎 View on Sedo
+            </a>
+        </div>
+        
+        <div class="contact-info">
+            <h3>💬 Serious Inquiries Welcome</h3>
+            <p>Ready to make this premium domain yours?<br>
+            Contact us through the marketplace platforms above for pricing and negotiations.</p>
+        </div>
+    </div>
+</body>
+</html>
